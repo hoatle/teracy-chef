@@ -11,7 +11,7 @@ Continuous Integration
 Usage
 -----
 
-** 1. Create a new cookbook **
+**1. Create a new cookbook**
 
 ```
 $ rake new_cookbook
@@ -29,7 +29,7 @@ $ rake new_cookbook[test, main-cookbooks]
 ```
 This will create a `test` cookbook into `main-cookbooks` path.
 
-** 2. Build cookbooks **
+**2. Build cookbooks**
 
 ```
 $ rake build
@@ -43,9 +43,20 @@ For more tasks, refer to `Rakefile`.
 Installation
 ------------
 
-- Ruby 1.9.3
+**1. System Prerequisites**
+
+- Ruby 1.9.3 (Tested with ruby 1.9.3p194 (2012-04-20 revision 35410))
+
+You're running teracy-dev VM? See: http://dev.teracy.org/docs/develop/ruby_training.html
+
+You're runnning Ubuntu? See: https://github.com/teracy-official/dev/blob/master/scripts/rbenv.sh
+
+- Gem Bundler: `$ gem install bundler` (Tested with Bundler version 1.3.5)
+
+
+**2. Dependency**
+
 - `$ git submodule update --init --recursive`
-- `$ gem install bundle`
 - `$ bundle install`
 
 
